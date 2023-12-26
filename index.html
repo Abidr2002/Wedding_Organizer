@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Orginizer</title>
+
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron">
+        <h1>Make Your Wedding Unforgetable</h1>
+        <p>
+          Pernikahan adalah momen yang penuh kebahagiaan, di mana semua orang
+          berkumpul dan merayakan cinta sejati pasangan yang baru saja menikah
+        </p>
+      </div>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">Serenity Weddings & Event</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#strength">Strength</a></li>
+          <li><a href="#service">Our Service</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="content">
+        <article class="card" id="about">
+          <h2>About</h2>
+          <p>
+            Serenity Weddings & Events resmi berdiri sejak tahun 2010, bermula
+            dari pesanan kecil-kecilan dan berusaha tetap survive menghadapi
+            persaingan yang makin ketat kami berusaha untuk tetap eksis dalam
+            bidang usaha catering. Kemudian kami memberanikan diri untuk andil
+            dalam industri makanan khususnya jasa catering. Walau mengutamakan
+            harga ekonomis tetapi kami tidak melupakan kenikmatan rasa makanan ,
+            kualitas makanan , dan penampilan makanan.
+          </p>
+          <p>
+            Serenity Weddings & Events memiliki beberapa pengalaman menangani
+            pesanan kecil maupun besar mulai dari penyediaan konsumsi untuk
+            harian , karyawan, acara keluarga, acara sekolah, rapat, kantor,
+            acara kampus, EO , pernikahan dan lain-lain. Semoga kedepan kami
+            dapat terus mengembangkan usaha ini, dapat memberikan pelayanan yang
+            baik bagi konsumen dan dapat membuka lapangan kerja bagi masyarakat
+            sekitar.
+          </p>
+
+          <img
+            class="featured-image"
+            src="assets/image/about.jpg"
+            alt="about"
+          />
+        </article>
+
+        <article class="card" id="strength">
+          <h2>Mengapa Harus Memilih Serenity Weddings & Events?</h2>
+          <div class="feature-container">
+            <div class="feature">
+              <img
+                src="assets/image/pelayanan.png"
+                alt=""
+                width="100"
+                height="100"
+              />
+              <h4>Pelayanan Terbaik</h4>
+              <p>
+                Sesuai motto kami "your best wedding partner" tim kami akan
+                melayani dan menjadi partner untuk mensukseskan acara Anda.
+              </p>
+            </div>
+            <div class="feature">
+              <img
+                src="assets/image/profesional.png"
+                alt=""
+                width="100"
+                height="100"
+              />
+              <h4>Profesional</h4>
+              <p>
+                Tim kami beranggotakan orang-orang yang profesional &
+                berpengalaman di dunia wedding.
+              </p>
+            </div>
+            <div class="feature">
+              <img
+                src="assets/image/budget.png"
+                alt=""
+                width="100"
+                height="100"
+              />
+              <h4>Custom Budget</h4>
+              <p>Kami dapat menyesuaikan dengan kebutuhan dan budget klien</p>
+            </div>
+            <div class="feature">
+              <img
+                src="assets/image/konsultasi.png"
+                alt=""
+                width="100"
+                height="100"
+              />
+              <h4>Free Konsultasi</h4>
+              <p>
+                Kami memberikan konsultasi gratis sebagai bentuk pelayanan
+                maksimal kami.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" id="service">
+          <h2>Our Service</h2>
+          <div class="row" style="padding-top: 1.5em; text-align: center">
+            <div class="col">
+              <img
+                src="assets/image/wedding organizer.jpeg"
+                alt=""
+                height="200"
+              />
+              <h6>Wedding Organizer</h6>
+            </div>
+            <div class="col">
+              <img src="assets/image/rias.jpeg" alt="" height="200" />
+              <h6>Rias, Dekorasi, Fotografi, Entertainment, Lain-lain</h6>
+            </div>
+            <div class="col">
+              <img src="assets/image/catering.jpeg" alt="" height="200" />
+              <h6>Catering Prasmanan Pernikahan</h6>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <aside>
+        <article class="card profile">
+          <header>
+            <h2>Hubungi</h2>
+            <p>Abid Romadhon</p>
+            <figure>
+              <img src="assets/image/profil.png" alt="profil" height="200" />
+            </figure>
+          </header>
+          <section>
+            <h3>Informasi Lainnya</h3>
+            <table>
+              <tr>
+                <th>No Telp</th>
+                <td>089610556303</td>
+              </tr>
+              <tr>
+                <th>Instagram</th>
+                <td>romadhonabid</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+
+    <footer>
+      <p>
+        Kelas Dasar Pemrograman Web &#169; 2023, SIB Dicoding Academy Ahmad
+        Hauzan Abid Romadhon
+      </p>
+    </footer>
+
+    <script>
+      const jumbotron = document.querySelector(".jumbotron");
+      const navbar = document.querySelector(".navbar");
+
+      function handleScroll() {
+        if (window.scrollY >= jumbotron.clientHeight) {
+          navbar.classList.add("navbar-fixed");
+        } else {
+          navbar.classList.remove("navbar-fixed");
+        }
+      }
+
+      window.addEventListener("scroll", handleScroll);
+    </script>
+  </body>
+</html>
